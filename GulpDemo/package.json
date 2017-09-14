@@ -1,0 +1,13 @@
+{
+  "name": "praveenpuli",
+  "version": "0.0.1",
+  "dependencies": {
+    "gulp-concat":"latest",
+    "gulp-uglify":"latest",
+    "gulp-minify-html":"latest",
+    "gulp-minify-css":"latest",
+    "gulp":"latest",
+    "gulp-bower":"latest",
+    "gulp-open":"latest"
+  }
+}
