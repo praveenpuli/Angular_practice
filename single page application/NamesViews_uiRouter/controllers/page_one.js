@@ -1,0 +1,8 @@
+(function (){
+    "use strict";
+
+    app.controller("page_one",page_one);
+    function page_one ($scope){
+        $scope.var_one = "named view uiRouter text from page_one...!";
+    }
+})();
