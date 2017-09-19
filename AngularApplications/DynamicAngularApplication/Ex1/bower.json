@@ -1,0 +1,6 @@
+{
+  "name":"praveenpuli",
+  "dependencies":{
+    "angular":"latest"
+  }
+}
