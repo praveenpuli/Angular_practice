@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<div class="my_class">
+    <div ng-controller="parent_controller">{{parent}}</div>
+    <div ng-controller="child_controller">{{child}}</div>
+    <div ng-controller="sub_controller">{{sub}}</div>
+</div>
+
+<style>
+    div.my_class div{
+        text-align:center;
+        color:green;
+    }
+
+</style>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script>
+    var app = angular.module("app",[]);
+    app.controller ("parent_controller",parent_controller);
+    function parent_controller ($scope){
+        $scope.parent = "parent_controller text...!";
+    }
+    app.controller ("child_controller",child_controller);
+    function child_controller ($scope){
+        $scope.child = "child_controller text...!";
+    }
+    app.controller ("sub_controller",sub_controller);
+    function sub_controller ($scope){
+        $scope.sub = "sub_controller text...!"
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller="ctrl">
+
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<h1 style="color:darkblue">{{data}}</h1>
+<script>
+
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl",ctrl);
+    function ctrl ($scope){
+        $scope.data = " ngContrller with manual bootstrap..!"
+    }
+    angular.bootstrap(document,["app"]);
+
+</script>
+
+
+</html>

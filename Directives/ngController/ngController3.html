@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<div style="color:red" ng-controller="ctrl_one">{{var_one}}</div>
+
+<div style="color:greenyellow" ng-controller="ctrl_two">{{var_two}}</div>
+<script src="../bower_components/angular/angular.min.js"></script>
+
+<script>
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl_one",ctrl_one);
+    function ctrl_one ($scope){
+        $scope.var_one = "i am from controller one...!";
+    }
+    app.controller ("ctrl_two",ctrl_two);
+    function ctrl_two ($scope){
+        $scope.var_two = "i am from controller two...!";
+    }
+</script>
+
+</html>

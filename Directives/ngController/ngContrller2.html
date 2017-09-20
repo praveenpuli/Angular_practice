@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<div style="color:darkblue" ng-controller="ctrl_one" ng-app="app">{{var_one}}</div>
+<div id="my_div" style="color:darkgreen" ng-controller="ctrl_two">{{var_two}}</div>
+<script>
+
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl_one",ctrl_one);
+    function ctrl_one ($scope){
+        $scope.var_one = " ngController text via Auto Bootstrap..!";
+    }
+    app.controller ("ctrl_two",ctrl_two);
+    function ctrl_two ($scope){
+        $scope.var_two = "ngController text via Manual Bootstrap...!";
+    }
+    var my_div = document.getElementById("my_div");
+    angular.bootstrap(my_div,["app"]);
+
+</script>
+
+
+</html>
