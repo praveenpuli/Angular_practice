@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<table class="table table-bordered">
+    <tr>
+        <th>e_id</th>
+        <th>e_name</th>
+        <th>e_sal</th>
+    </tr>
+    <tr ng-repeat="x in array" ng-class-odd="'odd'" ng-class-even="'even'">
+        <td>{{x.e_id}}</td>
+        <td>{{x.e_name}}</td>
+        <td>{{x.e_sal}}</td>
+    </tr>
+</table>
+<style>
+    .odd {
+        color:red;
+    }
+    .even{
+        color:green;
+    }
+</style>
+
+<script>
+
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl",ctrl);
+    function ctrl ($scope){
+        $scope.array= [{"e_id":111,"e_name":"e_one","e_sal":1000},
+            {"e_id":222,"e_name":"e_two","e_sal":2000},
+            {"e_id":333,"e_name":"e_three","e_sal":3000},
+            {"e_id":444,"e_name":"e_four","e_sal":4000},
+            {"e_id":555,"e_name":"e_five","e_sal":5000},
+            {"e_id":666,"e_name":"e_six","e_sal":6000},
+            {"e_id":777,"e_name":"e_seven","e_sal":7000},
+            {"e_id":888,"e_name":"e_eight","e_sal":8000},
+            {"e_id":999,"e_name":"e_nine","e_sal":9000},
+        ];
+    }
+
+</script>
+
+</html>

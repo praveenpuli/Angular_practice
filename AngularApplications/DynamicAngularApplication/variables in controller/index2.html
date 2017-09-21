@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+<script src="bower_components/angular/angular.min.js"></script>
+<h1>{{sub_one+"..."+sub_two+"..."+sub_three}}</h1>
+<script>
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl",ctrl);
+    function ctrl ($scope){
+        $scope.sub_one = "variable_one in controller..!";
+        $scope.sub_two = "variable_two in controller..!";
+        $scope.sub_three = "variable_three in controller..!"
+    }
+</script>
+
+</html>

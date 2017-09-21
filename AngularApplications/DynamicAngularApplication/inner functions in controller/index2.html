@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+<script src="bower_components/angular/angular.min.js"></script>
+<div ng-bind="fun_one()"></div>
+
+<script>
+
+    var app = angular.module("app",[]);
+    app.controller ("ctrl",ctrl);
+    function ctrl ($scope){
+        $scope.fun_one = function(){
+            return $scope.fun_two();
+        };
+        $scope.fun_two = function (){
+            return "inner function in controller..!"
+        }
+    }
+</script>
+</html>
