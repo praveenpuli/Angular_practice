@@ -6,22 +6,22 @@
 
 <script>
     var app = angular.module("app",[]);
-    app.service("my_service",my_service);
-    function my_service(){
+    app.service("service1",service1);
+    function service1(){
         this.fun_one = function(){
-            return "some text from fun_one...!";
+            return " text one using service() ...!";
         }
         this.fun_two = function(){
-            return "some text from fun_two...!"
+            return " text two using service()...!"
         }
     }
     app.controller("ctrl_one",ctrl_one);
-    function ctrl_one($scope,my_service){
-        $scope.var_one = my_service.fun_one();
+    function ctrl_one($scope,service1){
+        $scope.var_one = service1.fun_one();
     }
     app.controller("ctrl_two",ctrl_two);
-    function ctrl_two($scope,my_service){
-        $scope.var_two=my_service.fun_two();
+    function ctrl_two($scope,service1){
+        $scope.var_two=service1.fun_two();
     }
 
 </script>

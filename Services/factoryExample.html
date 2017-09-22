@@ -6,25 +6,20 @@
 <script>
 
     var app = angular.module("app",[]);
-    app.factory("my_service",my_service);
-    function my_service(){
-        //return "I am from factory";
-        return new class_one().fun_one();
+    app.factory("service1",service1);
+    function service1(){
+        return "I am from factory";
 
     }
     app.controller("ctrl_one",ctrl_one);
-    function ctrl_one($scope,my_service){
-        $scope.var_one = my_service;
+    function ctrl_one($scope,service1){
+        $scope.var_one = service1;
     }
     app.controller("ctrl_two",ctrl_two);
-    function ctrl_two($scope,my_service){
-        $scope.var_two = my_service;
+    function ctrl_two($scope,service1){
+        $scope.var_two = service1;
     }
-    function my_class(){
-        this.fun_one = function(){
-            return "Welcome to JS Classes";
-        }
-    }
+
 
 </script>
 

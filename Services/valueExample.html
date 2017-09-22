@@ -7,17 +7,17 @@
 
     var app = angular.module("app",[]);
 
-    app.value("my_service","root_one");
-    app.value("my_service","root_two");
+    app.value("service1","root_two");
+    app.value("service1","root_one");
 
     app.controller("ctrl_one",ctrl_one);
-    function ctrl_one($scope,my_service) {
-        $scope.var_one = my_service;
+    function ctrl_one($scope,service1) {
+        $scope.var_one = service1;
     }
 
     app.controller("ctrl_two",ctrl_two);
-    function ctrl_two($scope,my_service) {
-        $scope.var_two = my_service;
+    function ctrl_two($scope,service1) {
+        $scope.var_two = service1;
     }
 
 </script>

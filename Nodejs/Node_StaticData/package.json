@@ -1,0 +1,8 @@
+{
+  "name": "Node_StaticData",
+  "version": "0.0.1",
+  "dependencies": {
+    "express":"latest"
+    
+  }
+}

@@ -8,26 +8,26 @@
     var app = angular.module("app",[]);
 
     app.config(config);
-    function config(my_serviceProvider) {
-        my_serviceProvider.var_one="root_two";
+    function config(service1Provider) {
+        service1Provider.var_one="root_2";
     }
 
-    app.provider("my_service",my_service);
-    function my_service() {
-        this.var_one = "root_one";
+    app.provider("service1",service1);
+    function service1() {
+        this.var_one = "root_1";
         this.$get = function () {
             return this.var_one;
         };
     };
 
     app.controller("ctrl_one",ctrl_one);
-    function ctrl_one($scope,my_service) {
-        $scope.var_one = my_service;
+    function ctrl_one($scope,service1) {
+        $scope.var_one = service1;
     }
 
     app.controller("ctrl_two",ctrl_two);
-    function ctrl_two($scope,my_service) {
-        $scope.var_two = my_service;
+    function ctrl_two($scope,service1) {
+        $scope.var_two = service1;
     }
 
 </script>
