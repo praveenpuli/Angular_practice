@@ -1,14 +1,10 @@
 {
   "products":[
-    {"p_id":1,"p_name":"A","p_cost":9},
-    {"p_id":2,"p_name":"B","p_cost":8},
-    {"p_id":3,"p_name":"C","p_cost":7},
-    {"p_id":4,"p_name":"D","p_cost":6},
-    {"p_id":5,"p_name":"E","p_cost":5},
-    {"p_id":6,"p_name":"F","p_cost":4},
-    {"p_id":7,"p_name":"G","p_cost":3},
-    {"p_id":8,"p_name":"I","p_cost":2},
-    {"p_id":9,"p_name":"J","p_cost":1}
+    {"p_id":1,"p_name":"A","p_cost":5},
+    {"p_id":2,"p_name":"B","p_cost":4},
+    {"p_id":3,"p_name":"C","p_cost":3},
+    {"p_id":4,"p_name":"D","p_cost":2},
+    {"p_id":5,"p_name":"E","p_cost":1}
 
   ]
 }

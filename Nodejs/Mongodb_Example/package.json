@@ -1,8 +1,9 @@
 {
-  "name": "Node_StaticData",
+  "name": "Mongodb_Example",
   "version": "0.0.1",
   "dependencies": {
     "express":"latest",
-    "fs":"latest"
+    "mongodb":"latest"
+    
   }
 }
