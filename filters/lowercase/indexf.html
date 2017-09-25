@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+{{three | lowercase}}
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+<script>
+
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl",ctrl);
+     function ctrl ($scope){
+         $scope.three = "LOWERCASE";
+     }
+
+
+
+</script>
+
+
+
+</html>

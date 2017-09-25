@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+
+<table border="1">
+    <tr>
+    <td>p_id</td>
+    <td>p_name</td>
+    <td>p_cost</td>
+    </tr>
+    <tr ng-repeat="x in five">
+        <td>{{x.p_id}}</td>
+        <td>{{x.p_name}}</td>
+        <td>{{x.p_cost}}</td>
+    </tr>
+
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<script>
+
+
+    var app = angular.module ("app",[]);
+    app.controller ("ctrl",ctrl);
+    function ctrl ($scope){
+        $scope.five = [
+            {"p_id":1,"p_name":"A","p_cost":5},
+            {"p_id":2,"p_name":"B","p_cost":4},
+            {"p_id":3,"p_name":"C","p_cost":3},
+            {"p_id":4,"p_name":"D","p_cost":2},
+            {"p_id":5,"p_name":"E","p_cost":1}
+
+        ]
+    }
+
+
+</script>
+
+
+
+
+</html>

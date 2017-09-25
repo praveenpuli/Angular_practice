@@ -4,8 +4,8 @@ var app = express();
 app.use(express.static(__dirname+"/../Read_MySQLData"));
 var connection = mysql.createConnection({
     host:"localhost",
-    user:"root",
-    password:"root",
+    user:"praveen",
+    password:"aarupuli",
     database:"demo"
 });
 connection.connect();
